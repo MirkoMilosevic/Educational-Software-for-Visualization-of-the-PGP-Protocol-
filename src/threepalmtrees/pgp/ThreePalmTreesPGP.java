@@ -1,0 +1,96 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package threepalmtrees.pgp;
+
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javax.crypto.Cipher;
+import util.MyData;
+import util.SchemeData;
+
+import javax.crypto.Cipher;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.Map;
+
+/**
+ *
+ * @author Mirko
+ */
+public class ThreePalmTreesPGP extends Application {
+    
+    @Override
+    public void start(Stage stage) throws Exception {
+        
+        fixKeyLength();
+        
+        System.out.println("Prosao KeyLength!!!");
+        
+        MyData.initMyData();
+        SchemeData.clearS();
+        SchemeData.clearE();
+        
+        Parent root = FXMLLoader.load(getClass().getResource("Welcome.fxml"));
+        
+        Scene scene = new Scene(root);
+        
+        stage.setScene(scene);
+        stage.setTitle("TreePalmTrees PGP");
+        stage.show();
+         
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+    public static void fixKeyLength() {
+    String errorString = "Failed manually overriding key-length permissions.";
+    int newMaxKeyLength;
+    try {
+        if ((newMaxKeyLength = Cipher.getMaxAllowedKeyLength("AES")) < 256) {
+            Class c = Class.forName("javax.crypto.CryptoAllPermissionCollection");
+            Constructor con = c.getDeclaredConstructor();
+            con.setAccessible(true);
+            Object allPermissionCollection = con.newInstance();
+            Field f = c.getDeclaredField("all_allowed");
+            f.setAccessible(true);
+            f.setBoolean(allPermissionCollection, true);
+
+            c = Class.forName("javax.crypto.CryptoPermissions");
+            con = c.getDeclaredConstructor();
+            con.setAccessible(true);
+            Object allPermissions = con.newInstance();
+            f = c.getDeclaredField("perms");
+            f.setAccessible(true);
+            ((Map) f.get(allPermissions)).put("*", allPermissionCollection);
+
+            c = Class.forName("javax.crypto.JceSecurityManager");
+            f = c.getDeclaredField("defaultPolicy");
+            f.setAccessible(true);
+            Field mf = Field.class.getDeclaredField("modifiers");
+            mf.setAccessible(true);
+            mf.setInt(f, f.getModifiers() & ~Modifier.FINAL);
+            f.set(null, allPermissions);
+
+            newMaxKeyLength = Cipher.getMaxAllowedKeyLength("AES");
+        }
+    } catch (Exception e) {
+        throw new RuntimeException(errorString, e);
+    }
+    if (newMaxKeyLength < 256)
+        throw new RuntimeException(errorString); // hack failed
+}
+    
+}

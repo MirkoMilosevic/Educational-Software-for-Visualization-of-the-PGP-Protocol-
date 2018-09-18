@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.DemoRadix64Controller">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="920.0" stylesheets="@../css/demo_radix.css">
+         <children>
+            <Label layoutX="28.0" layoutY="87.0" prefHeight="29.0" prefWidth="108.0" text="Hexidecimal:" />
+            <Label layoutX="28.0" layoutY="145.0" prefHeight="29.0" prefWidth="108.0" text="8-bit:" />
+            <Label layoutX="28.0" layoutY="295.0" prefHeight="29.0" prefWidth="108.0" text="6-bit:" />
+            <Label layoutX="28.0" layoutY="344.0" prefHeight="29.0" prefWidth="108.0" text="Decimal:" />
+            <Label layoutX="473.0" layoutY="222.0" rotate="90.0" text="=&gt;" />
+            <Label layoutX="28.0" layoutY="29.0" prefHeight="29.0" prefWidth="108.0" text="Input:" />
+            <Label fx:id="hex1" layoutX="171.0" layoutY="87.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="eight1" layoutX="171.0" layoutY="145.0" prefHeight="29.0" prefWidth="80.0" />
+            <Label fx:id="hex6" layoutX="471.0" layoutY="87.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="hex3" layoutX="282.0" layoutY="87.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="hex2" layoutX="227.0" layoutY="87.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="hex4" layoutX="358.0" layoutY="87.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="hex5" layoutX="415.0" layoutY="87.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="eight2" layoutX="273.0" layoutY="145.0" prefHeight="29.0" prefWidth="80.0" />
+            <Label fx:id="eight3" layoutX="375.0" layoutY="145.0" prefHeight="29.0" prefWidth="80.0" />
+            <Label fx:id="eight4" layoutX="495.0" layoutY="145.0" prefHeight="29.0" prefWidth="80.0" />
+            <Label fx:id="eight5" layoutX="596.0" layoutY="145.0" prefHeight="29.0" prefWidth="80.0" />
+            <Label fx:id="eight6" layoutX="694.0" layoutY="145.0" prefHeight="29.0" prefWidth="80.0" />
+            <Label fx:id="six1" layoutX="171.0" layoutY="295.0" prefWidth="70.0" />
+            <Label fx:id="six2" layoutX="262.0" layoutY="295.0" prefWidth="70.0" />
+            <Label fx:id="six3" layoutX="353.0" layoutY="295.0" prefWidth="70.0" />
+            <Label fx:id="six4" layoutX="443.0" layoutY="295.0" prefWidth="70.0" />
+            <Label fx:id="six5" layoutX="553.0" layoutY="295.0" prefWidth="70.0" />
+            <Label fx:id="six6" layoutX="641.0" layoutY="295.0" prefWidth="70.0" />
+            <Label fx:id="six7" layoutX="732.0" layoutY="295.0" prefWidth="70.0" />
+            <Label fx:id="six8" layoutX="823.0" layoutY="295.0" prefWidth="70.0" />
+            <Label fx:id="dec1" layoutX="189.0" layoutY="344.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="dec2" layoutX="280.0" layoutY="344.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="dec3" layoutX="371.0" layoutY="344.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="dec4" layoutX="461.0" layoutY="344.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="dec5" layoutX="571.0" layoutY="344.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="dec8" layoutX="841.0" layoutY="344.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="dec7" layoutX="750.0" layoutY="344.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="dec6" layoutX="659.0" layoutY="344.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="input" layoutX="172.0" layoutY="29.0" prefHeight="29.0" prefWidth="250.0" />
+            <Button fx:id="nextButton" layoutX="417.0" layoutY="478.0" mnemonicParsing="false" onAction="#next" prefHeight="35.0" prefWidth="108.0" text="&gt;&gt;" />
+            <Label layoutX="28.0" layoutY="399.0" prefHeight="29.0" prefWidth="108.0" text="Output:" />
+            <Label fx:id="out1" layoutX="189.0" layoutY="399.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="out2" layoutX="280.0" layoutY="399.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="out3" layoutX="371.0" layoutY="399.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="out6" layoutX="659.0" layoutY="399.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="out5" layoutX="571.0" layoutY="399.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="out7" layoutX="750.0" layoutY="399.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="out4" layoutX="461.0" layoutY="399.0" prefHeight="29.0" prefWidth="35.0" />
+            <Label fx:id="out8" layoutX="841.0" layoutY="399.0" prefHeight="29.0" prefWidth="35.0" />
+            <Button fx:id="tableButton" layoutX="769.0" layoutY="478.0" mnemonicParsing="false" onAction="#viewTable" prefHeight="40.0" prefWidth="108.0" text="View Table" />
+            <Button fx:id="backButton" layoutX="28.0" layoutY="478.0" mnemonicParsing="false" onAction="#returnToMenu" prefHeight="40.0" prefWidth="180.0" text="Return to Menu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

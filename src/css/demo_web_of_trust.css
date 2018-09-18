@@ -1,0 +1,222 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 7, 2018, 9:38:07 PM
+    Author     : Mirko
+*/
+
+.root
+{
+    -fx-background-color: white;
+}
+
+.button 
+{
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-background-insets: 0,1,4,5,6;
+    -fx-background-radius: 9,8,5,4,3;
+    -fx-padding: 5 10 5 10;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+
+.button Text 
+{
+    -fx-effect: dropshadow( one-pass-box , black , 0, 0.0 , 0 , -1 );
+}
+
+#juliusChoiceBox 
+{
+  -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+  -fx-mark-color: white;
+}
+
+#juliusChoiceBox .context-menu 
+{ 
+    -fx-background-color: black; 
+}
+
+#juliusChoiceBox .menu-item:focused 
+{ 
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#juliusChoiceBox .menu-item > .label 
+{ 
+    -fx-text-fill: white; 
+    -fx-background-color: black;
+}
+
+#juliusChoiceBox .menu-item:focused > .label 
+{ 
+    -fx-text-fill: black;
+    -fx-background-color: white;
+}
+
+#juliusChoiceBox > .label 
+{ 
+    -fx-text-fill: white; 
+    -fx-font-weight: bold;
+}
+
+
+#donChoiceBox 
+{
+  -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+  -fx-mark-color: white;
+}
+
+#donChoiceBox .context-menu 
+{ 
+    -fx-background-color: black; 
+}
+
+#donChoiceBox .menu-item:focused 
+{ 
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#donChoiceBox .menu-item > .label 
+{ 
+    -fx-text-fill: white; 
+    -fx-background-color: black;
+}
+
+#donChoiceBox .menu-item:focused > .label 
+{ 
+    -fx-text-fill: black;
+    -fx-background-color: white;
+}
+
+#donChoiceBox > .label 
+{ 
+    -fx-text-fill: white; 
+    -fx-font-weight: bold;
+}
+
+
+#cliffordChoiceBox 
+{
+  -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+  -fx-mark-color: white;
+}
+
+#cliffordChoiceBox .context-menu 
+{ 
+    -fx-background-color: black; 
+}
+
+#cliffordChoiceBox .menu-item:focused 
+{ 
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#cliffordChoiceBox .menu-item > .label 
+{ 
+    -fx-text-fill: white; 
+    -fx-background-color: black;
+}
+
+#cliffordChoiceBox .menu-item:focused > .label 
+{ 
+    -fx-text-fill: black;
+    -fx-background-color: white;
+}
+
+#cliffordChoiceBox > .label 
+{ 
+    -fx-text-fill: white; 
+    -fx-font-weight: bold;
+}
+
+#userLabel
+{
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+}
+
+#user1, #user2, #user3, #user4, #user5
+{
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+}
+
+#key1, #key2, #key3, #key4
+{
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+}
+
+#legitimacy, #trust1, #trust2, #trust3
+{
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+}
+
+#trustTextFlow
+{
+    -fx-background-color: #343534;
+    -fx-padding: 5 10 5 10;
+}
+
+#box1, #box2, #box3, #box4, #box5
+{
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+}

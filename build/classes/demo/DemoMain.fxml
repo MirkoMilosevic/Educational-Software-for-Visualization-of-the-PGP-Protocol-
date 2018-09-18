@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="800.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.DemoMainController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="400.0" stylesheets="@../css/demo_main.css">
+         <children>
+            <Label layoutX="114.0" layoutY="14.0" prefHeight="53.0" prefWidth="172.0" text="Examples">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <VBox layoutX="50.0" layoutY="88.0" prefHeight="535.0" prefWidth="300.0" spacing="10.0">
+               <children>
+                  <Button fx:id="optionAuthentication" mnemonicParsing="false" onAction="#authentication" prefHeight="40.0" prefWidth="300.0" text="Authentication">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionConfidentiality" mnemonicParsing="false" onAction="#confidentiality" prefHeight="40.0" prefWidth="300.0" text="Confidentiality">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionRadix64" mnemonicParsing="false" onAction="#radix64" prefHeight="40.0" prefWidth="300.0" text="Radix64 Conversion">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionRadixAndCompression" mnemonicParsing="false" onAction="#radixAndCompression" prefHeight="40.0" prefWidth="300.0" text="Radix64 and Compression">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionFullService" mnemonicParsing="false" onAction="#fullService" prefHeight="40.0" prefWidth="300.0" text="Authentication and Confidentiality">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionSegmentation" mnemonicParsing="false" onAction="#segmentation" prefHeight="40.0" prefWidth="300.0" text="Segmentation and Reassembly">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionSessionKey" layoutX="10.0" layoutY="250.0" mnemonicParsing="false" onAction="#sessionKey" prefHeight="40.0" prefWidth="300.0" text="Session Key">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionPrivateRing" layoutX="10.0" layoutY="210.0" mnemonicParsing="false" onAction="#privateRing" prefHeight="40.0" prefWidth="300.0" text="Private Key Ring">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionPublicRing" layoutX="10.0" layoutY="330.0" mnemonicParsing="false" onAction="#publicRing" prefHeight="40.0" prefWidth="300.0" text="Public Key Ring">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionWebOfTrust" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" onAction="#webOfTrust" prefHeight="40.0" prefWidth="300.0" text="Web of Trust">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionNegative" layoutX="10.0" layoutY="460.0" mnemonicParsing="false" onAction="#negative" prefHeight="40.0" prefWidth="300.0" text="Negative Authentication">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="optionTest" layoutX="140.0" layoutY="662.0" mnemonicParsing="false" onAction="#test" prefHeight="40.0" prefWidth="120.0" text="Take a Test">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="returnButton" layoutX="140.0" layoutY="726.0" mnemonicParsing="false" onAction="#returnToMainMenu" prefHeight="40.0" prefWidth="120.0" text="Return">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheme.EncryptSchemeController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="850.0" stylesheets="@../css/scheme.css">
+         <children>
+            <AnchorPane prefHeight="300.0" prefWidth="850.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="eSenderLabel" layoutX="14.0" layoutY="14.0" text="Sender">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="eMessage" layoutX="17.0" layoutY="153.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="e1" layoutX="67.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="eZip" layoutX="131.0" layoutY="164.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="Z" />
+                  <Label fx:id="e3" layoutX="161.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="eCompress" layoutX="191.0" layoutY="154.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="e4" layoutX="241.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="e5" layoutX="67.0" layoutY="203.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="e6" layoutX="99.0" layoutY="235.0" prefHeight="17.0" prefWidth="176.0" text="------------------------------------" />
+                  <Label fx:id="e7" layoutX="243.0" layoutY="203.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Button fx:id="eEncryptMessage" layoutX="305.0" layoutY="164.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="E" />
+                  <Button fx:id="ePlus" layoutX="401.0" layoutY="165.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="+" />
+                  <Button fx:id="eEncryptKs" layoutX="401.0" layoutY="108.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="E" />
+                  <Label layoutX="363.0" layoutY="33.0" text="Recipient's Public Key" />
+                  <Label fx:id="e13" layoutX="337.0" layoutY="170.0" prefHeight="17.0" prefWidth="64.0" text="-------------" />
+                  <Label fx:id="e10" layoutX="338.0" layoutY="115.0" prefHeight="17.0" prefWidth="62.0" text="------------" />
+                  <Button fx:id="eKs" layoutX="305.0" layoutY="108.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label fx:id="e9" layoutX="308.0" layoutY="142.0" rotate="90.0" text="-----" />
+                  <Label fx:id="e12" layoutX="404.0" layoutY="142.0" rotate="90.0" text="-----" />
+                  <Label layoutX="289.0" layoutY="91.0" text="Session Key" />
+                  <Button fx:id="eKey" layoutX="401.0" layoutY="50.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label fx:id="e11" layoutX="404.0" layoutY="83.0" rotate="90.0" text="-----" />
+                  <Label fx:id="e14" layoutX="431.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="eEncrypt" layoutX="461.0" layoutY="154.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="e15" layoutX="511.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="eToR64" layoutX="575.0" layoutY="163.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="toR64" />
+                  <Button fx:id="eConvert" layoutX="662.0" layoutY="153.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label layoutX="781.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="SEND" />
+                  <Label fx:id="e17" layoutX="625.0" layoutY="170.0" prefHeight="17.0" prefWidth="37.0" text="-------" />
+                  <Label fx:id="e18" layoutX="712.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="e20" layoutX="511.0" layoutY="203.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="e22" layoutX="712.0" layoutY="203.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="e21" layoutX="540.0" layoutY="235.0" prefHeight="17.0" prefWidth="208.0" text="-------------------------------------------" />
+                  <Label fx:id="e2" layoutX="99.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="e8" layoutX="274.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="e16" layoutX="543.0" layoutY="170.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="e19" layoutX="741.0" layoutY="170.0" prefHeight="17.0" prefWidth="37.0" text="-------" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="300.0" prefHeight="300.0" prefWidth="850.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="eRecipientLabel" layoutX="15.0" layoutY="19.0" text="Recipient">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="eMessage1" layoutX="15.0" layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="e23" layoutX="65.0" layoutY="117.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="eFromR64" layoutX="129.0" layoutY="111.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="71.0" text="fromR64" />
+                  <Label fx:id="e25" layoutX="200.0" layoutY="120.0" prefHeight="17.0" prefWidth="30.0" text="-----" />
+                  <Button fx:id="eEncrypt1" layoutX="255.0" layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="e31" layoutX="268.0" layoutY="154.0" rotate="90.0" text="-----" />
+                  <Label fx:id="e32" layoutX="280.0" layoutY="166.0" prefHeight="17.0" prefWidth="62.0" text="------------" />
+                  <Button fx:id="eDecryptKs" layoutX="342.0" layoutY="160.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="D" />
+                  <Label fx:id="e33" layoutX="345.0" layoutY="194.0" rotate="90.0" text="-----" />
+                  <Button fx:id="eKey1" layoutX="342.0" layoutY="215.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label layoutX="298.0" layoutY="245.0" text="Recipient's Private Key" />
+                  <Label fx:id="e34" layoutX="372.0" layoutY="167.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="eKs1" layoutX="404.0" layoutY="160.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label layoutX="388.0" layoutY="194.0" text="Session Key" />
+                  <Button fx:id="eDecryptMessage" layoutX="404.0" layoutY="110.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="D" />
+                  <Label fx:id="e35" layoutX="407.0" layoutY="142.0" rotate="90.0" text="-----" />
+                  <Label fx:id="e30" layoutX="305.0" layoutY="118.0" prefHeight="17.0" prefWidth="98.0" text="--------------------" />
+                  <Button fx:id="eCompress1" layoutX="498.0" layoutY="101.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="e36" layoutX="434.0" layoutY="118.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="e38" layoutX="548.0" layoutY="118.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="eZip1" layoutX="578.0" layoutY="112.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="-Z" />
+                  <Label fx:id="e39" layoutX="608.0" layoutY="118.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="eMessage2" layoutX="672.0" layoutY="103.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="e40" layoutX="434.0" layoutY="152.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="e41" layoutX="466.0" layoutY="182.0" prefHeight="17.0" prefWidth="176.0" text="------------------------------------" />
+                  <Label fx:id="e42" layoutX="610.0" layoutY="152.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="e26" layoutX="65.0" layoutY="152.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="e28" layoutX="191.0" layoutY="152.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="e27" layoutX="97.0" layoutY="182.0" prefHeight="17.0" prefWidth="126.0" text="--------------------------" />
+                  <Label fx:id="e24" layoutX="97.0" layoutY="117.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="e29" layoutX="223.0" layoutY="120.0" prefHeight="17.0" prefWidth="37.0" text="------" />
+                  <Label fx:id="e37" layoutX="466.0" layoutY="118.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="e43" layoutX="642.0" layoutY="118.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

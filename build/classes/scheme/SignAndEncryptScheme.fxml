@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheme.SignAndEncryptSchemeController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/scheme.css">
+         <children>
+            <AnchorPane prefHeight="300.0" prefWidth="1100.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="bSenderLabel" layoutX="14.0" layoutY="14.0" text="Sender">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="bMessage" layoutX="17.0" layoutY="148.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Button fx:id="bHash" layoutX="102.0" layoutY="158.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="H" />
+                  <Button fx:id="bEncrypt" layoutX="162.0" layoutY="158.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="E" />
+                  <Button fx:id="bKey" layoutX="162.0" layoutY="102.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Button fx:id="bPlus" layoutX="224.0" layoutY="158.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="+" />
+                  <Button fx:id="bSign" layoutX="287.0" layoutY="148.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Button fx:id="bZip" layoutX="401.0" layoutY="158.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="Z" />
+                  <Button fx:id="bCompress" layoutX="464.0" layoutY="148.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Button fx:id="bToR64" layoutX="847.0" layoutY="160.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="toR64" />
+                  <Button fx:id="bConvert" layoutX="934.0" layoutY="150.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label layoutX="1048.0" layoutY="167.0" prefHeight="17.0" prefWidth="30.0" text="SEND" />
+                  <Label layoutX="124.0" layoutY="85.0" text="Sender's Private Key" />
+                  <Label fx:id="b1" layoutX="70.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b2" layoutX="132.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b4" layoutX="192.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b8" layoutX="254.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b11" layoutX="431.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b25" layoutX="897.0" layoutY="165.0" prefHeight="17.0" prefWidth="37.0" text="-------" />
+                  <Label fx:id="b12" layoutX="514.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b9" layoutX="337.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b26" layoutX="984.0" layoutY="165.0" prefHeight="17.0" prefWidth="37.0" text="-------" />
+                  <Label fx:id="b5" layoutX="53.0" layoutY="197.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="b13" layoutX="337.0" layoutY="197.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="b6" layoutX="85.0" layoutY="229.0" prefHeight="17.0" prefWidth="154.0" text="--------------------------------" />
+                  <Label fx:id="b15" layoutX="514.0" layoutY="197.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="b14" layoutX="369.0" layoutY="229.0" prefHeight="17.0" prefWidth="176.0" text="------------------------------------" />
+                  <Label fx:id="b29" layoutX="992.0" layoutY="198.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="b28" layoutX="817.0" layoutY="230.0" prefHeight="17.0" prefWidth="208.0" text="-------------------------------------------" />
+                  <Label fx:id="b7" layoutX="214.0" layoutY="205.0" prefHeight="17.0" prefWidth="50.0" rotate="90.0" text="----------" />
+                  <Label fx:id="b3" layoutX="166.0" layoutY="136.0" rotate="90.0" text="-----" />
+                  <Button fx:id="bEncryptMessage" layoutX="577.0" layoutY="159.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="E" />
+                  <Button fx:id="bPlus1" layoutX="673.0" layoutY="160.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="+" />
+                  <Button fx:id="bEncryptKs" layoutX="673.0" layoutY="103.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="E" />
+                  <Label layoutX="635.0" layoutY="28.0" text="Recipient's Public Key" />
+                  <Label fx:id="b21" layoutX="609.0" layoutY="165.0" prefHeight="17.0" prefWidth="64.0" text="-------------" />
+                  <Label fx:id="b18" layoutX="610.0" layoutY="110.0" prefHeight="17.0" prefWidth="62.0" text="------------" />
+                  <Button fx:id="bKs" layoutX="577.0" layoutY="103.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label fx:id="b17" layoutX="580.0" layoutY="137.0" rotate="90.0" text="-----" />
+                  <Label fx:id="b20" layoutX="676.0" layoutY="137.0" rotate="90.0" text="-----" />
+                  <Label layoutX="561.0" layoutY="86.0" text="Session Key" />
+                  <Button fx:id="bKey1" layoutX="673.0" layoutY="45.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label fx:id="b19" layoutX="676.0" layoutY="78.0" rotate="90.0" text="-----" />
+                  <Label fx:id="b22" layoutX="703.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="bEncrypt1" layoutX="733.0" layoutY="149.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="b23" layoutX="783.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b27" layoutX="783.0" layoutY="198.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="b10" layoutX="369.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b16" layoutX="546.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b24" layoutX="817.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b30" layoutX="1021.0" layoutY="165.0" prefHeight="17.0" prefWidth="30.0" text="-----" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="300.0" prefHeight="300.0" prefWidth="1100.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="bRecipientLabel" layoutX="14.0" layoutY="14.0" text="Recipient">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="bMessage1" layoutX="14.0" layoutY="78.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="b31" layoutX="64.0" layoutY="95.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="bFromR64" layoutX="123.0" layoutY="89.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="67.0" text="fromR64" />
+                  <Label fx:id="b33" layoutX="190.0" layoutY="95.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="bEncrypt2" layoutX="254.0" layoutY="78.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="b38" layoutX="267.0" layoutY="132.0" rotate="90.0" text="-----" />
+                  <Label fx:id="b39" layoutX="279.0" layoutY="144.0" prefHeight="17.0" prefWidth="62.0" text="------------" />
+                  <Button fx:id="bDecryptKs" layoutX="341.0" layoutY="138.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="D" />
+                  <Label fx:id="b40" layoutX="344.0" layoutY="172.0" rotate="90.0" text="-----" />
+                  <Button fx:id="bKey2" layoutX="341.0" layoutY="193.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label layoutX="297.0" layoutY="223.0" text="Recipient's Private Key" />
+                  <Label fx:id="b41" layoutX="371.0" layoutY="145.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="bKs1" layoutX="403.0" layoutY="138.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label layoutX="387.0" layoutY="172.0" text="Session Key" />
+                  <Button fx:id="bDecryptMessage" layoutX="403.0" layoutY="88.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="D" />
+                  <Label fx:id="b42" layoutX="406.0" layoutY="120.0" rotate="90.0" text="-----" />
+                  <Label fx:id="b43" layoutX="304.0" layoutY="96.0" prefHeight="17.0" prefWidth="98.0" text="--------------------" />
+                  <Button fx:id="bCompress1" layoutX="497.0" layoutY="79.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="b44" layoutX="433.0" layoutY="96.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b46" layoutX="547.0" layoutY="96.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="bZip1" layoutX="577.0" layoutY="90.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="-Z" />
+                  <Label fx:id="b47" layoutX="607.0" layoutY="97.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b48" layoutX="433.0" layoutY="130.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="b49" layoutX="465.0" layoutY="160.0" prefHeight="17.0" prefWidth="176.0" text="------------------------------------" />
+                  <Label fx:id="b50" layoutX="609.0" layoutY="130.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="b34" layoutX="64.0" layoutY="130.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="b36" layoutX="190.0" layoutY="130.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="b35" layoutX="96.0" layoutY="160.0" prefHeight="17.0" prefWidth="126.0" text="--------------------------" />
+                  <Button fx:id="bSign1" layoutX="671.0" layoutY="81.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="b52" layoutX="721.0" layoutY="96.0" prefHeight="17.0" prefWidth="64.0" text="-------------" />
+                  <Button fx:id="bHash1" layoutX="785.0" layoutY="89.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="H" />
+                  <Button fx:id="bDecrypt" layoutX="785.0" layoutY="156.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="D" />
+                  <Label fx:id="b57" layoutX="788.0" layoutY="190.0" rotate="90.0" text="-----" />
+                  <Button fx:id="bKey3" layoutX="784.0" layoutY="209.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label layoutX="746.0" layoutY="239.0" text="Sender's Public Key" />
+                  <Label fx:id="b56" layoutX="698.0" layoutY="163.0" prefHeight="17.0" prefWidth="87.0" text="------------------" />
+                  <Label fx:id="b53" layoutX="815.0" layoutY="96.0" prefHeight="17.0" prefWidth="87.0" text="------------------" />
+                  <Label fx:id="b58" layoutX="815.0" layoutY="163.0" prefHeight="17.0" prefWidth="87.0" text="------------------" />
+                  <Button fx:id="bCompare" layoutX="886.0" layoutY="126.0" mnemonicParsing="false" text="Compare" />
+                  <Label fx:id="b55" layoutX="677.0" layoutY="143.0" rotate="90.0" text="--------" />
+                  <Label fx:id="b54" layoutX="892.0" layoutY="105.0" rotate="90.0" text="----" />
+                  <Label fx:id="b59" layoutX="892.0" layoutY="155.0" rotate="90.0" text="----" />
+                  <Label fx:id="b32" layoutX="96.0" layoutY="95.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b37" layoutX="222.0" layoutY="95.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b45" layoutX="465.0" layoutY="96.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="b51" layoutX="641.0" layoutY="97.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="threepalmtrees.pgp.TableViewExampleController">
+   <children>
+      <TableView fx:id="puTableView" layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="puC1" prefWidth="95.0" text="description" />
+          <TableColumn fx:id="puC2" prefWidth="92.0" text="timestamp" />
+            <TableColumn fx:id="puC3" prefWidth="100.0" text="userId" />
+            <TableColumn fx:id="puC4" prefWidth="89.0" text="keyId" />
+            <TableColumn fx:id="puC5" prefWidth="84.0" text="viewKey" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

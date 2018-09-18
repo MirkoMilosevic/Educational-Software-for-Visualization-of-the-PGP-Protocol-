@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="418.0" prefWidth="610.0" stylesheets="@../../css/table.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="threepalmtrees.pgp.RevokedKeysController">
+   <children>
+      <TableView fx:id="revokedKeysTable" layoutY="39.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="descriptionColumn" prefWidth="187.0" text="Description" />
+          <TableColumn fx:id="keyIdColumn" minWidth="0.0" prefWidth="208.0" text="Key ID" />
+            <TableColumn fx:id="reasonColumn" prefWidth="204.0" text="Resaon for Revocation" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="120.0" text="My Keys" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="239.0" prefHeight="25.0" prefWidth="120.0" text="Others' Keys" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="revokedKeysTable1" layoutY="264.0" prefHeight="220.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="descriptionColumn1" prefWidth="187.0" text="Description" />
+            <TableColumn fx:id="keyIdColumn1" minWidth="0.0" prefWidth="208.0" text="Key ID" />
+            <TableColumn fx:id="reasonColumn1" prefWidth="204.0" text="Resaon for Revocation" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" maxHeight="474.0" maxWidth="620.0" minHeight="474.0" minWidth="620.0" prefHeight="474.0" prefWidth="620.0" stylesheets="@../../css/content.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="threepalmtrees.pgp.AboutController">
+   <children>
+      <Circle fx:id="aboutCircle" fill="DODGERBLUE" layoutX="310.0" layoutY="106.0" radius="80.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextArea fx:id="aboutTextArea" layoutX="15.0" layoutY="245.0" prefHeight="200.0" prefWidth="590.0" />
+      <Label fx:id="aboutLabel" alignment="CENTER" contentDisplay="TOP" layoutX="160.0" layoutY="197.0" prefHeight="40.0" prefWidth="300.0" text="Label" />
+   </children>
+</AnchorPane>

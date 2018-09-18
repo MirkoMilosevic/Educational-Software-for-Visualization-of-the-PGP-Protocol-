@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="956.0" stylesheets="@../../css/table.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="threepalmtrees.pgp.KeyRingController">
+   <children>
+      <TableView fx:id="publicKeyRingTable" maxHeight="503.0" maxWidth="1000.0" minHeight="480.0" minWidth="620.0" prefHeight="503.0" prefWidth="964.0">
+        <columns>
+          <TableColumn fx:id="descriptionColumn" prefWidth="114.0" text="Description" />
+          <TableColumn fx:id="timestampColumn" prefWidth="93.0" text="Timestamp" />
+            <TableColumn fx:id="keyIdColumn" prefWidth="124.0" text="Key ID" />
+            <TableColumn fx:id="publicKeyColumn" prefWidth="85.0" text="Public Key" />
+            <TableColumn fx:id="userIdColumn" prefWidth="147.0" text="User ID" />
+            <TableColumn fx:id="ownerTrustColumn" prefWidth="101.0" text="Owner Trust" />
+            <TableColumn fx:id="changeTrustColumn" prefWidth="89.0" text="Change Trust" />
+            <TableColumn fx:id="signaturesColumn" prefWidth="90.0" text="Signatures" />
+            <TableColumn fx:id="keyLegitimacyColumn" minWidth="0.0" prefWidth="120.0" text="Key Legitimacy" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

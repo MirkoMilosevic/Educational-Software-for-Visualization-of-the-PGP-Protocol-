@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane stylesheets="@../css/scheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheme.SignSchemeController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="850.0" stylesheets="@../css/scheme.css">
+         <children>
+            <AnchorPane prefHeight="300.0" prefWidth="850.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="sSenderLabel" layoutX="14.0" layoutY="14.0" text="Sender">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sMessage" layoutX="17.0" layoutY="118.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Button fx:id="sHash" layoutX="102.0" layoutY="128.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="H" />
+                  <Button fx:id="sEncrypt" layoutX="162.0" layoutY="128.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="E" />
+                  <Button fx:id="sKey" layoutX="162.0" layoutY="72.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Button fx:id="sPlus" layoutX="224.0" layoutY="128.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="+" />
+                  <Button fx:id="sSign" layoutX="287.0" layoutY="118.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Button fx:id="sZip" layoutX="401.0" layoutY="128.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="Z" />
+                  <Button fx:id="sCompress" layoutX="464.0" layoutY="118.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Button fx:id="sToR64" layoutX="582.0" layoutY="128.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="toR64" />
+                  <Button fx:id="sConvert" layoutX="669.0" layoutY="118.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label layoutX="783.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="SEND" />
+                  <Label layoutX="124.0" layoutY="55.0" text="Sender's Private Key" />
+                  <Label fx:id="s1" layoutX="70.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s2" layoutX="132.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s4" layoutX="192.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s8" layoutX="254.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s11" layoutX="431.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s17" layoutX="632.0" layoutY="135.0" prefHeight="17.0" prefWidth="37.0" text="-------" />
+                  <Label fx:id="s12" layoutX="514.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s9" layoutX="337.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s18" layoutX="719.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s5" layoutX="53.0" layoutY="167.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="s13" layoutX="337.0" layoutY="167.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="s6" layoutX="85.0" layoutY="199.0" prefHeight="17.0" prefWidth="154.0" text="--------------------------------" />
+                  <Label fx:id="s15" layoutX="514.0" layoutY="167.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="s14" layoutX="369.0" layoutY="199.0" prefHeight="17.0" prefWidth="176.0" text="------------------------------------" />
+                  <Label fx:id="s20" layoutX="719.0" layoutY="167.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="s19" layoutX="544.0" layoutY="199.0" prefHeight="17.0" prefWidth="208.0" text="-------------------------------------------" />
+                  <Label fx:id="s7" layoutX="214.0" layoutY="175.0" prefHeight="17.0" prefWidth="50.0" rotate="90.0" text="----------" />
+                  <Label fx:id="s3" layoutX="166.0" layoutY="106.0" rotate="90.0" text="-----" />
+                  <Label fx:id="s10" layoutX="369.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s16" layoutX="546.0" layoutY="135.0" prefHeight="17.0" prefWidth="37.0" text="-------" />
+                  <Label fx:id="s21" layoutX="752.0" layoutY="135.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="6.0" layoutY="300.0" prefHeight="300.0" prefWidth="850.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="sRecipientLabel" layoutX="15.0" layoutY="19.0" text="Recipient">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sMessage1" layoutX="25.0" layoutY="91.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Button fx:id="sFromR64" layoutX="136.0" layoutY="101.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="67.0" text="fromR64" />
+                  <Label fx:id="s22" layoutX="75.0" layoutY="107.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s24" layoutX="203.0" layoutY="108.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="sCompress1" layoutX="233.0" layoutY="92.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="s25" layoutX="283.0" layoutY="108.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Button fx:id="sZip1" layoutX="343.0" layoutY="103.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="-Z" />
+                  <Button fx:id="sSign1" layoutX="437.0" layoutY="93.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                  <Label fx:id="s30" layoutX="373.0" layoutY="108.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s34" layoutX="487.0" layoutY="108.0" prefHeight="17.0" prefWidth="64.0" text="-------------" />
+                  <Button fx:id="sHash1" layoutX="551.0" layoutY="101.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="H" />
+                  <Button fx:id="sDecrypt" layoutX="551.0" layoutY="168.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="D" />
+                  <Label fx:id="s39" layoutX="554.0" layoutY="202.0" rotate="90.0" text="-----" />
+                  <Button fx:id="sKey1" layoutX="550.0" layoutY="221.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                  <Label layoutX="512.0" layoutY="251.0" text="Sender's Public Key" />
+                  <Label fx:id="s38" layoutX="464.0" layoutY="175.0" prefHeight="17.0" prefWidth="87.0" text="------------------" />
+                  <Label fx:id="s35" layoutX="581.0" layoutY="108.0" prefHeight="17.0" prefWidth="87.0" text="------------------" />
+                  <Label fx:id="s40" layoutX="581.0" layoutY="175.0" prefHeight="17.0" prefWidth="87.0" text="------------------" />
+                  <Button fx:id="sCompare" layoutX="652.0" layoutY="138.0" mnemonicParsing="false" text="Compare" />
+                  <Label fx:id="s26" layoutX="75.0" layoutY="142.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="s28" layoutX="283.0" layoutY="142.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="s32" layoutX="373.0" layoutY="142.0" prefHeight="17.0" prefWidth="64.0" rotate="90.0" text="-------------" />
+                  <Label fx:id="s27" layoutX="107.0" layoutY="174.0" prefHeight="17.0" prefWidth="208.0" text="-------------------------------------------" />
+                  <Label fx:id="s31" layoutX="315.0" layoutY="174.0" prefHeight="17.0" prefWidth="95.0" text="-------------------" />
+                  <Label fx:id="s37" layoutX="443.0" layoutY="155.0" rotate="90.0" text="--------" />
+                  <Label fx:id="s36" layoutX="658.0" layoutY="117.0" rotate="90.0" text="----" />
+                  <Label fx:id="s41" layoutX="658.0" layoutY="167.0" rotate="90.0" text="----" />
+                  <Label fx:id="s23" layoutX="107.0" layoutY="107.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s29" layoutX="315.0" layoutY="108.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+                  <Label fx:id="s33" layoutX="410.0" layoutY="108.0" prefHeight="17.0" prefWidth="30.0" text="------" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

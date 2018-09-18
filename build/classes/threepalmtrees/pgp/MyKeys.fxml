@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="451.0" prefWidth="800.0" stylesheets="@../../css/table.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="threepalmtrees.pgp.MyKeysController">
+   <children>
+      <TableView fx:id="privateKeyRingTable" layoutX="-4.0" layoutY="-4.0" prefHeight="480.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="descriptionColumn" prefWidth="117.0" text="Description" />
+          <TableColumn fx:id="timestampColumn" prefWidth="137.0" text="Timestamp" />
+            <TableColumn fx:id="keyIdColumn" prefWidth="130.0" text="Key ID" />
+            <TableColumn fx:id="publicKeyColumn" prefWidth="103.0" text="PublicKey" />
+            <TableColumn fx:id="userIdColumn" prefWidth="132.0" text="User ID" />
+            <TableColumn fx:id="privateKeyColumn" minWidth="0.0" prefWidth="180.0" text="E(PrivateKey)" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
